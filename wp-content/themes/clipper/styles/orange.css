@@ -1,0 +1,78 @@
+/* = Orange color scheme
+-------------------------------------------------------------- */
+
+a {
+	color:#bb3602;
+}
+.btn-submit {
+	color:#bb3602;
+}
+.btn,
+.order-gateway input[type="submit"] {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ff8e38), color-stop(1, #923600) );
+	background:-moz-linear-gradient( center top, #ff8e38 5%, #923600 100% );
+	background-color:#ff8e38;
+	border:1px solid #c45800;
+}
+.btn:hover,
+.btn.hover,
+.order-gateway input[type="submit"]:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #923600), color-stop(1, #ff8e38) );
+	background:-moz-linear-gradient( center top, #923600 5%, #ff8e38 100% );
+	background-color:#923600;
+}
+#header{
+	background:url(../images/bg-header-scale-orange.gif) repeat-x;
+}
+#nav li{
+	background:none repeat scroll 0 0 #551606;
+}
+#nav li.menu-arrow a {
+	background: url(../images/menu_arrow_orange.png) no-repeat scroll 0 5px transparent;
+}
+#header ul.menu ul.sub-menu {
+	background-color:#551606;
+}
+#header .search-box .holder{
+	background:#DDDDDD;
+}
+#header .search-box .btn-submit{
+	background:url(../images/btn-submit-transparent.png) no-repeat;
+}
+#sidebar .sidebox .cut{
+	background:url(../images/cut-orange.png) no-repeat;
+}
+#sidebar .share-box{
+	background:url(../images/share_coupon_btn_orange.png) no-repeat;
+}
+#sidebar .box .categories-list .text-holder a{
+	color:#bb3602;
+}
+#footer .bar{
+	background:#601b05 url(../images/bg-footer-orange.gif) repeat-x;
+}
+.content-box h1,
+.content-box h2, 
+.content-box h3, 
+.content-box h4, 
+.content-box h5, 
+.content-box h6{
+	color:#bb3602;
+}
+.comments-box h3,
+.comments-box h3 a{
+	color:#bb3602;
+}
+.post-box h3,
+.post-box h3 a{
+	color:#bb3602;
+}
+.post-box .btn-submit input{
+	background:url(../images/btn-post-submit-orange.gif) no-repeat;
+}
+.reports_form input[type="submit"] {
+	background:url(../images/btn-post-submit-small-orang.gif) no-repeat;
+}

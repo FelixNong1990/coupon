@@ -1,0 +1,42 @@
+/* = Internet Explorer 7 styles
+-------------------------------------------------------------- */
+
+* html .coupon-main{
+	float: none;
+}
+.couponAndTip{
+	position:absolute;
+}
+.results .progress-holder .progress{
+	width:60px;
+	text-align:left;
+}
+#content .blog .content-bar{
+	height:16px;
+}
+#content .head-box{
+	height:94px;
+}
+#content .content-box .head{
+	height:36px;
+}
+.content-box .post-box{
+	width:603px;
+}
+#respond p{
+	float:right;
+}
+#sidebar .sidebox .btn-submit span{
+	padding-top:7px!important;
+	width:100px;
+}
+#sidebar .sidebox .btn-submit{
+	width:135px;
+}
+#header ul.menu ul.sub-menu {
+	top:50px;
+	clear:left;
+}
+#header ul.menu li:hover {
+	position:static;
+}

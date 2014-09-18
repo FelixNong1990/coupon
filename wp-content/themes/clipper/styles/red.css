@@ -1,0 +1,78 @@
+/* = Red color scheme
+-------------------------------------------------------------- */
+
+a {
+	color:#850017;
+}
+.btn-submit {
+	color:#850017;
+}
+.btn,
+.order-gateway input[type="submit"] {
+	-moz-box-shadow:inset 0px 1px 0px 0px #faa5a5;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #faa5a5;
+	box-shadow:inset 0px 1px 0px 0px #faa5a5;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #d4032d), color-stop(1, #850017) );
+	background:-moz-linear-gradient( center top, #d4032d 5%, #850017 100% );
+	background-color:#d4032d;
+	border:1px solid #b80028;
+}
+.btn:hover,
+.btn.hover,
+.order-gateway input[type="submit"]:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #850017), color-stop(1, #d4032d) );
+	background:-moz-linear-gradient( center top, #850017 5%, #d4032d 100% );
+	background-color:#850017;
+}
+#header{
+	background:url(../images/bg-header-scale-red.gif) repeat-x;
+}
+#nav li{
+	background:none repeat scroll 0 0 #680315;
+}
+#nav li.menu-arrow a {
+	background: url(../images/menu_arrow_red.png) no-repeat scroll 0 5px transparent;
+}
+#header ul.menu ul.sub-menu {
+	background-color:#680315;
+}
+#header .search-box .holder{
+	background:#DDDDDD;
+}
+#header .search-box .btn-submit{
+	background:url(../images/btn-submit-transparent.png) no-repeat;
+}
+#sidebar .sidebox .cut{
+	background:url(../images/cut-red.png) no-repeat;
+}
+#sidebar .share-box{
+	background:url(../images/share_coupon_btn_red.png) no-repeat;
+}
+#sidebar .box .categories-list .text-holder a{
+	color:#810015;
+}
+#footer .bar{
+	background:#58040a url(../images/bg-footer-red.gif) repeat-x;
+}
+.content-box h1, 
+.content-box h2, 
+.content-box h3, 
+.content-box h4, 
+.content-box h5, 
+.content-box h6{
+	color:#850017;
+}
+.comments-box h3,
+.comments-box h3 a{
+	color:#840413;
+}
+.post-box h3,
+.post-box h3 a{
+	color:#a7030b;
+}
+.post-box .btn-submit input{
+	background:url(../images/submit-button.gif) no-repeat;
+}
+.reports_form input[type="submit"] {
+	background:url(../images/btn-post-submit-small.gif) no-repeat;
+}

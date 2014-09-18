@@ -1,0 +1,429 @@
+1.5.1 - 3/10/2014
+
+fixes:
+	- Fixed / Changed HTML editor to make it compatible with upcoming WordPress 3.9
+	- Fixed strict standards errors
+	- Fixed issue where special chars was escaped in email 'from name'
+	- Fixed issue with blank page in Chrome browser
+	- Fixed potential issue with locking wp-admin if related option is not set
+	- Fixed display of admin menu icons on WP 3.8
+	- Fixed potential vulnerabilities with unallowed editing coupons
+	- Fixed issue with expired coupon message displayed 24h too early
+	- Fixed expiration information in 'expiring coupons' widget
+	- Fixed issue with comments no being sent for moderation
+
+
+changes:
+	- Changed the way how 'click to copy code' feature work, it will open now a Colorbox window with code and instructions
+	- Localization of jQuery Validate has been moved to theme .POT file, and related admin option removed
+	- Added localization of jQuery Datepicker
+	- Added open graph meta tags
+	- Added automatically pruning daily stats table from records older than 30 days
+	- Added duplicate coupon check into Importer
+	- Added filter hooks into emails
+	- Renamed admin-style.css to admin.css
+
+
+1.5 - 12/11/13
+
+fixes:
+	- Fixed Subscribe widget
+	- Fixed layout display issues with top and bottom bar of coupon
+	- Fixed layout display issues with many categories
+	- Fixed layout display issues with Facebook widget when added into footer sidebar
+	- Fixed DB errors when MySQL in strict mode
+	- Fixed localizing validation messages on login pages
+	- Fixed repeated text above comments form
+	- Fixed $wpdb->escape deprecated notice
+	- Fixed use of deprecated jQuery .live() method
+	- Fixed issue with opening coupon code button url in IE with flash disabled
+	- Fixed AJAX calls when FORCE_SSL_ADMIN defined
+	- Fixed 'allow html' option which was not disabling auto-embeds on WordPress 3.5+
+	- Fixed custom favicon option
+	- Fixed notice in admin edit coupon page if author not set
+
+
+changes:
+	- Made layout responsive for optimal viewing on any device
+	- Changed template files names for home page (to front-page.php) and blog page (to index.php)
+	- Changed date format for coupon expiration date from 'm-d-Y' to 'Y-m-d'
+	- Changed admin settting pages
+	- Changed theme file structure
+	- Added option to mark store as featured
+	- Added option to reset saved search data
+	- Added option to reset statistics
+	- Added option to exclude unreliable coupons from homepage
+	- Added option to disable featured slider
+	- Added option to not link and not index single coupon pages
+	- Added option to disable cloaking outgoing URLs
+	- Added visual mark to expired coupons on home page and single coupon page
+	- Added 'Total Sales' to admin dashboard charts
+	- Added new System Info page with option to download reports
+	- Added in page navigation on Stores and Categories pages
+	- Added compatibility with OneAll Social Login plugin
+	- Added coupons count to admin Users page
+	- Added pre-installing widgets in sidebars on theme installation
+	- Added pre-installing menus on theme installation
+	- Added tabbed blog widget
+	- Added widget that displays expiring soon coupons
+	- Added listing user orders in his dashboard
+	- Added CSS styling for Twitter Pro Widget
+	- Removed Twitter widget
+	- Removed clipper-no-admin.pot file
+	- Removed 'From URL' tab in media uploader when accessed from edit store taxonomy page
+	- Removed thumbnail column from coupons in admin
+	- Removed votes fields from example csv file
+	- Removed unnecessary images from the images folder
+	- Permalinks structure will not be changed on theme installation
+	- Utilized 'no_found_rows' arg to limit number of db queries
+	- Changed icons for coupons admin menu
+	- Changed use of votes transients to appthemes_set_visitor_transient()
+	- Moved into functions Categories and Stores list generating code
+	- Added function wrappers for stores meta
+	- Added feature to ping 'update services' while publish coupon
+	- Store images has been changed from fixed to proportional
+	- Added checking coupon status each time coupon is displayed
+	- Converted all emails to use appthemes_send_email()
+	- Changed status code to 301 for affiliate redirects
+	- Separated 'show password filters' on registration and profile page
+	- Totally rewritten Reports component
+	- Added 'continue to coupon' button in order summary page
+	- Added 'tests' library for unit testing
+	- Added changed_files.txt that contain list of changed files
+	- Renamed widget classes, added CLPR prefix
+
+
+1.4 - 1/25/13
+
+fixes:
+	- Added missed store name on stores page
+	- Fixed possible issue with translated post statuses in user dashboard
+	- Fixed Twitter feed widget on theme dashboard page
+	- Email from "Email to friend" option contained theme name
+	- Custom email after registration was not sending, WP default was sent
+	- While searching site, search filters was modifying query of popular coupons widget
+	- Fixed/Improved installation and updating process
+	- Reported Coupon email contained incorrect url to edit coupon
+	- Fixed display issue of custom submit meta box buttons, occur on WordPress 3.5
+	- Fixed submit button styles on admin settings pages, occur on WordPress 3.5
+	- Fixed missing argument warnings for $wpdb->prepare(), occur on WordPress 3.5
+	- Fixed js errors, autocomplete and datepicker library enqueued from WordPress now
+	- Fixed display issues of datepicker, occur on WordPress 3.5
+	- Fixed notices on store links if coupon have no assigned store
+	- Fixed multiple usage of H1 tags, used h3 tags for coupon title on lists, and h5 tags for coupon type on lists
+	- Fixed issue where using function site_url instead of home_url affected those who installed WP in a different directory
+	- Corrected misleading information about ad location
+
+
+changes:
+	- Implemented payments
+	- Added option to upload custom store images, fixes issue with 'Share coupon' feature where Facebook not suggest store image
+	- Changed all localization tags from 'appthemes' to APP_TD which reference to 'clipper' now
+	- Added support for multi-level menu in header
+	- general.js file and the "Enable general.js" option has been removed from theme, general.js file will be automatically enqueued from root directory of child theme if available
+	- Added filter hook 'clpr_coupon_validate_fields' on submit coupon process
+	- Example child theme has been moved to 'examples' dir
+	- Removed creating blogroll link to appthemes.com on theme installation
+	- Changed usage of 'clpr_correct_taxonomy_counter()' to '_appthemes_update_post_term_count()'
+	- Added option to disable redirect from wp-login.php, can be used for compatibility with maintenance plugins
+	- Changed feeds to use 'app-feed' theme support
+	- Added number of items control into 'Popular coupons' widget
+	- Added number of items control into 'Coupon stores' widget
+	- Added number of items control into 'Popular searches' widget
+	- Used 'term_description()' for taxonomy descriptions
+	- Added option in customer dashboard to delete coupons
+	- Improved Facebook Page url option
+	- Updated external js libraries and enqueue over ssl if site use it
+	- Added advertise action hook 'appthemes_advertise_content()', by default have assigned Clipper standard advertise feature
+	- Function 'get_clpr_coupon_url()' has been deprecated, use 'clpr_get_coupon_out_url()' instead
+	- Added relisting coupon feature
+	- Added ability to change affiliate url in edit coupon form
+	- Added ability to change coupon type in edit coupon form
+	- Added 'appthemes_notices' action hook to single coupon template
+	- Added notice to single coupon page about pending listing
+	- Expiration date is now required field
+
+
+1.3.2 - 9/3/12
+
+fixes:
+	- Taxonomy counters didn't include unreliable coupons
+	- Coupon title was clipped in homepage slider
+	- Corrected position of ZeroClipboard movies (click to copy) if WP bar is enabled
+	- HTML tags was not stripped if Allow HTML option set to No
+	- User personal options was reset while updating profile
+	- Image size parametres was overriden when attaching to posts and pages
+	- Fixed store thumbnail notice on store pages
+	- Fixed undefined index/variable notices on search
+	- Corrected use of $wpdb->insert() and $wpdb->update() where applicable.
+
+
+changes:
+	- Implemented new themed login pages
+	- Added most popular searches widget 
+	- Added compatibility with WP default permalink structure (without rewrite)
+	- Added filter 'clpr_store_default_image', allows to change default image of store
+	- Added filter 'clpr_store_image', allows to add 3-rd party services for store thumbnails
+	- Added filter 'clpr_store_out_url', allows to modify store outgoing urls
+	- Added filter 'clpr_coupon_out_url', allows to modify coupon outgoing urls
+	- Repositioned 'register_form' hook on Registration page
+	- TinyMCE editor loading with 'inlinepopups' plugin
+	- Added feeds to taxonomy pages (tags, categories, types)
+	- Added separate feed for blog pages
+	- Added coupons into main feed
+	- Added example child theme
+	- Added store meta fields into example csv file
+	- Introduced clpr_get_submit_coupon_url() function instead of option in Admin
+	- Improved installation and updating process
+
+
+1.3.1 - 6/18/12
+
+fixes:
+	- Corrected layout display in IE7
+	- Default permalink structure was not set during theme activation
+	- Widget wrappers didn't had widget specific class
+	- Title on login pages wasn't displayed site title
+	- Coupon code button wasn't worked on devices which do not support flash
+	- Popup comment form didn't worked on homepage
+	- Popup email friend form didn't worked on homepage
+	- Auto suggest results was overlayed by slider 
+	- Importer was not accepting non-latin characters in some cases
+
+
+changes:
+	- Implemented template wrappers
+	- Added option to hide coupon code until clicked
+	- Removed Facebook login feature
+	- Added compatibility with Social Connect plugin
+	- Improvements to installation scripts
+	- Custom database tables has been registered in $wpdb object for easier access
+	- Changed doctype to HTML5
+	- Added viewport meta for mobile devices
+	- Added X-UA-Compatible meta for use of latest IE browser
+	- Added coupon_status to default accepted args in importer
+
+
+1.3 - 4/10/12
+
+fixes:
+	- Added 'mb_strtoupper' compatibility check
+	- Categories page counter was not including coupons from child categories
+	- Added missed options to choose Profile and Dashboard page
+	- Facebook logout url in some cases was invalid
+	- Counter on homepage was not count unreliable coupons
+	- Duplicate pages was created on theme re-activation if using custom slugs
+	- Image uploader in Clipper Settings pages does not work correctly
+	- Counter on Clipper dashboard was not count unreliable coupons
+	- Default WordPress template was displayed while reseting password
+	- Added Tradedoubler links compatibility 
+
+
+changes:
+	- Added TinyMCE editor for coupon submission form
+	- Replaced and restyled featured slider
+	- Renamed 'clpr_action_importer_args' filter to 'clpr_csv_importer_args'
+	- Added compatibility with WangGuard plugin
+	- Optimized hidden stores feature
+	- Added edit coupon link for users
+	- Added option to reset votes of individual coupon
+	- Optimized header and footer menu
+	- Removed popular stores from search bar
+	- Changed logo of Clipper
+	- "Share Coupon" button was changed to widget
+	- Revised "Get Coupons by Email" widget
+	- Added expiration date to coupon item on listing pages
+	- Added store thumbnail to each coupon item
+	- Vote box and badge has been combined
+	- "Share Coupon" page was added to default menu
+
+
+1.2.4 - 2/27/12
+
+fixes:
+	- Accessing Importer page causes errors when using child theme
+	- Posts and pages shows as coupons in search results
+	- Subcategories was not displayed in the categories pages
+	- Substores was not displayed in the stores pages
+	- Categories with non-latin names was not displayed properly on 'categories' page
+	- Stores with non-latin names was not displayed properly on 'stores' page
+	- Coupon was marked as unreliable day before expire date
+	- Coupons with empty expire date was pruned from site
+	- Reset votes option was reseting coupons to 0%
+	- Widgets in footer had the same icon, person icon
+	- Daily coupon stats return wrong results if coupon haven't views on current day
+	- Guest data was not prefilled in comment form
+	- Popular stores widget didn't worked on sites with non-default wp prefix 
+
+
+changes:
+	- Added prune coupons email for administrator
+	- Added filter 'clpr_action_importer_args' for extending importer args
+	- Added template files for 'Coupon Type' and attachments
+	- Added support for new coupon type 'Promotion', without code
+	- Display of store description was limited in quick edit stores box
+	- Changed sidebar on stores page from 'home' to 'store'
+	- Improved importer, making additional checks, skip buggy entries in CSV
+	- Disabled search suggest as it was deprecated by Yahoo
+
+
+1.2.3 - 1/17/12
+
+fixes:
+	- "Warning: Division by zero" when adding a new coupon from back end
+	- "Warning: in_array(): Wrong datatype for second argument" after reseting votes from back end
+	- Wrong email message when moderation for new coupons is off
+	- Added missed default options on new installs
+	- appthemes_get_custom_taxonomy() now correctly check values if no one assigned 
+	- Database optimization improvements on the store list page
+	- Database optimization improvements on the taxonomy pages
+	- Memory optimization on updating process
+	- Hide inactive stores from search form
+	- Media Library search results was modified by filters
+	- Images from coupon body was removed if printable image was changed
+	- Coupon type was not updated on front end, if type was changed from Coupon Code to Printable Coupon
+	- Expired coupons not pruning if prune option set to yes
+	- Views was not shown when viewing single coupon
+	- The vote bars was not displaying the color correclty in Opera
+	- Menu was not displaying correctly with longer page names 
+
+
+changes:
+	- Automatically set new coupons at 100%
+	- Replaced caller_get_posts with ignore_sticky_posts on the taxonomy pages
+	- Replaced get_userdatabylogin() with get_user_by('login'), update_usermeta() with update_user_meta()
+	- Add Facebook login and sign up option
+
+
+1.2.2 - 12/22/11
+
+fixes:
+	- Coupon category and tags were not importing correctly from csv
+	- "Warning: Missing argument 2 for add_store_extra_fields()" appeared on store page when debug mode was turned on
+	- Expiration date for coupons didn't appear for some people
+	- Auto-complete search was not working for some people
+	- Theme version number wasn't displaying correctly on the system info admin page
+	- Coupons created from the admin didn't auto-populate the vote up/down custom field values
+
+
+changes:
+	- Language .mo files should be placed in a 'languages' folder in 'wp-content' instead of inside the 'clipper' folder
+	- Swapped out get_currentuserinfo() and replaced with wp_get_current_user() on the user profile page
+
+
+
+1.2.1 - 10/14/11
+
+fixes:
+	- category and tag pages to work like the store page
+	- issue with unreliable coupons not filtering on the store page
+	- issue with missing html() function
+
+
+changes:
+	- none
+
+
+1.2 - 10/10/11
+
+fixes:
+	- issue where coupons were not appearing in the store
+	- performed a general security review and tightened up code where necessary
+	- issue where the 30-day stats dashboard widget wasn't being displayed in IE7/IE8
+	- issue where search drop-down box was interfering with the featured coupons slider
+	- issue where the "exclude blog pages" admin option wasn't working
+	- issue where the footer widget was breaking when theme was translated
+	- issue where the default Amazon.com coupon is created each time the theme is activated
+	- new coupons with zero votes now appear in the active coupons section instead of under "unreliable coupons"
+	- issue with pagination where page numbers overlap with lots of pages
+	- issue where some pages (i.e. dashboard) were not accessible unless a different permalink setting was enabled
+	- css change to admin tooltips so they now support rounded corners
+	- issue with the "report a coupon" where only registered users can report. non-registered users saw a spinning icon
+	- issue where destination url brackets are stripped from the link
+	- expiration coupon field is now hidden if no expiration date was entered
+	- issue where the coupon boxes didn't format correctly in IE7
+	- issue where auto-complete search returned stores even if they had no coupons	
+
+
+changes:
+	- added new option for expired coupons. they now either appear under "unreliable coupons" or can be changed to "draft" status
+	- added a delete site preview image option from within the admin section
+	- added a favicon and changed how styles are being loaded. now using wp_print_styles
+	- removed the appthemes_meta hook since it was deprecated. Use wp_head hook instead
+	- added a dedicated store rss feed link to each store page
+	- expiration date is now visible on coupons
+	- added new approval email sent to customer once their coupon has been approved
+
+
+1.1.1 - 6/10/11
+
+fixes:
+	- issue where new coupons wouldn't appear on store or category pages until a vote was casted
+	- issue where using function site_url instead of home_url which affected those who installed WP in a different directory
+	- issue with printable coupons not showing coupon image on single coupon page
+	- dashboard widgets no longer show move icon when hover on bar
+	- dashboard so it's now fluid width. also styled so it automatically matches new WP 3.2 design
+	- removed some dash strings from the .po files that shouldn't be translated 
+
+changes:
+	- added security check for admin options panel. now only users with "manage_options" capability will see it
+	- added new "Unreliable Coupons" section on the stores and category pages
+
+
+1.1 - 5/24/11
+
+fixes:
+	- issue where new store is created (with no coupons yet) and displays the incorrect url and website screenshot
+	- importer now includes store url & coupon destination url fields 
+	- footer widget display issue where left side text was being cut off
+	- clipper top of header logo was being cutoff by a few pixels
+	- styled the rss sidebar widget so it better matches the theme
+	- added singular text for one coupon listing
+	- coupon type drop-down in WordPress admin coupon edit now shows/hides field based on selection
+	- issue where a broken image would show even if no ad was set on the store page
+	- issue where total "coupons active" count was incorrect when there were multiple pages
+	- issues with Safari & Chrome where css box-shadow wasn't working
+	- issue where store url and thumbnail weren't displaying for new empty store
+	- issue where chart widget didn't show up in IE9. upgraded to flot 0.7
+	- issue where some servers errored b/c mb_strlen function wasn't enabled
+	- changed menu tab width so it accommodates larger menu text strings 
+	
+
+changes:
+	- added new stores page template listing all stores by first letter
+	- added new coupon categories page template listing all categories by first letter
+	- added destination & display URL fields for coupons and stores
+	- built new masked coupon & store URLs engine to hide affiliate links
+	- built new click-thru tracking engine and CTR stats for each coupon	
+	- built new store moderation option so newly submitted stores can be reviewed first
+	- added new store, category, & tag sections for unreliable coupons (less than 50% success rate)	
+	- added destination field to the coupon submission form
+	- restyled the coupon WordPress admin write panel and added metrics (views, clicks, CTR)
+	- added new clicks/views and CTR columns to the coupon WordPress admin page
+	- added new clicks and active columns to the stores WordPress admin page 
+	- redesigned the coupon meta box on edit coupon WordPress admin page
+	- updated colorbox to the latest version 1.3.17.1
+	
+
+
+1.0.1 - 4/1/11
+
+fixes:
+	- vote counters were reset every time admin options are saved
+	- editing coupon in WP admin all meta box fields don't save
+	- featured coupons were cutoff when viewing in safari 
+	- coupon id was not being set when creating new coupon via WP admin
+
+changes:
+	- coupon editing for printed coupons much more streamlined from WP admin 
+
+
+
+1.0 - first release 3/29/11
+
+fixes:
+	- none
+
+changes:
+	- none
+

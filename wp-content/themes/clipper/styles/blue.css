@@ -1,0 +1,78 @@
+/* = Blue color scheme
+-------------------------------------------------------------- */
+
+a {
+	color:#0364A7;
+}
+.btn-submit {
+	color:#0364A7;
+}
+.btn,
+.order-gateway input[type="submit"] {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #0363a7), color-stop(1, #00324d) );
+	background:-moz-linear-gradient( center top, #0363a7 5%, #00324d 100% );
+	background-color:#0363a7;
+	border:1px solid #005281;
+}
+.btn:hover,
+.btn.hover,
+.order-gateway input[type="submit"]:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #00324d), color-stop(1, #0363a7) );
+	background:-moz-linear-gradient( center top, #00324d 5%, #0363a7 100% );
+	background-color:#00324d;
+}
+#header{
+	background:url(../images/bg-header-scale-blue.gif) repeat-x;
+}
+#nav li{
+	background:none repeat scroll 0 0 #043C49;
+}
+#nav li.menu-arrow a {
+	background: url(../images/menu_arrow_blue.png) no-repeat scroll 0 5px transparent;
+}
+#header ul.menu ul.sub-menu {
+	background-color:#043C49;
+}
+#header .search-box .holder{
+	background:#DDDDDD;
+}
+#header .search-box .btn-submit{
+	background:url(../images/btn-submit-transparent.png) no-repeat;
+}
+#sidebar .box .cut{
+	background:url(../images/cut-blue.png) no-repeat;
+}
+#sidebar .share-box{
+	background:url(../images/share_coupon_btn_blue.png) no-repeat;
+}
+#sidebar .box .categories-list .text-holder a{
+	color:#0c3569;
+}
+#footer .bar{
+	background:#042956 url(../images/bg-footer-blue.gif) repeat-x;
+}
+.content-box h1, 
+.content-box h2, 
+.content-box h3, 
+.content-box h4, 
+.content-box h5, 
+.content-box h6{
+	color:#0364a7;
+}
+.comments-box h3,
+.comments-box h3 a{
+	color:#0364a7;
+}
+.post-box h3,
+.post-box h3 a{
+	color:#0364a7;
+}
+.post-box .btn-submit input{
+	background:url(../images/btn-post-submit-blue.gif) no-repeat;
+}
+.reports_form input[type="submit"] {
+	background:url(../images/btn-post-submit-small-blue.gif) no-repeat;
+}
