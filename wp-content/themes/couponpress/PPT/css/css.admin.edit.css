@@ -1,0 +1,250 @@
+/* =============================================================================
+   FIELDSET STYLES + FORM FIELD STYLES
+   ========================================================================== */
+   
+fieldset {border: 1px solid #ddd; margin-bottom: 15px; padding:10px;  	}
+  
+.ppt-form-line{	display:block;	border-bottom:1px solid #E5E5E5;	padding:5px 0px;}
+.ppt-labeltext{	display:block;	color:#3C5868;	float:left;	width:130px;	line-height:20px;	font-size:12px;	padding-top:3px;	padding-right:10px;}
+.ppt-forminput{	width:200px; background:#fff;	border:1px solid #D2D4D4;	border-top:1px solid #A5A6A6;	border-radius:2px;	color:#4444;	font:12px Arial, Helvetica, sans-serif;	padding:7px 6px;}
+.ppt-disable{	background:#fafafa;}
+.ppt-forminput-active{	background:#fff;;	border:1px solid #B5B7B7;	border-top:1px solid #8E8F8F;	border-radius:2px;	color:#666666;	font:12px Arial, Helvetica, sans-serif;	padding:7px 6px;	width:auto;}
+
+.cleaner {clear: both; visibility: hidden; height: 0; overflow: hidden; line-height: 0; font-size: 0;}
+.clearfix:after {content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+ .nob { border-bottom:0px; }
+ 
+ 
+	.gray_box {	-webkit-border-radius: 1px;	-moz-border-radius: 1px;	border-radius: 1px;	border: 1px solid #bbb;	margin-bottom: 20px;}
+	.gray_box_content h3 { padding:0px; margin:0px; color:#444; margin-top:-5px;}
+	.gray_box_content {	border: 1px solid #fff;	padding:10px; }
+	.gray_box {	background: #EAEAEA;	color: #838383;	border-color: #C1C1C1; }
+	
+	.blue_box {	-webkit-border-radius: 1px;	-moz-border-radius: 1px;	border-radius: 1px;	border: 1px solid #bbb;	margin-bottom: 20px;}
+	.blue_box_content .titlep {	margin-bottom: 0px; font-size:18px; color: #5E6984; margin-top:0px; padding:0px; }
+	.blue_box_content {	border: 1px solid #fff;	padding:10px;}
+	.blue_box {	background: #D7E7F5;	color: #5E6984;	border-color: #AACEE6;}
+	
+	.green_box {	-webkit-border-radius: 1px;	-moz-border-radius: 1px;	border-radius: 1px;	border: 1px solid #bbb;	margin-bottom: 20px;}
+	.green_box_content h3 {  padding:0px; margin:0px; color:#006600; margin-top:-5px; }
+	.green_box_content .titlep {	margin-bottom: 0px; font-size:18px; color: #466840; margin-top:0px; padding:0px; }
+	.green_box_content {	border: 1px solid #fff;	padding:10px;}
+	.green_box {	background: #E2F2CE;	color: #466840;	border-color: #BFE098;}
+ 
+	
+	.yellow_box {	-webkit-border-radius: 1px;	-moz-border-radius: 1px;	border-radius: 1px;	border: 1px solid #bbb;	margin-bottom: 20px;}
+	.yellow_box_content h3 {	margin-bottom: 0px;}
+	.yellow_box_content {	border: 1px solid #fff;	padding:10px;}
+ 
+	.yellow_box {	background: #FFF9CC;	color: #736B4C;	border-color: #FFDB4F;}
+	
+	.red_box {	-webkit-border-radius: 1px;	-moz-border-radius: 1px;	border-radius: 1px;	border: 1px solid #bbb;	margin-bottom: 20px;}
+	.red_box_content h3 {	margin-bottom: 0px;}
+	.red_box_content {	border: 1px solid #fff;	padding:10px;}
+	.red_box {	background: #FDE9EA;	color: #A14A40;	border-color: #FDCED0;}
+	
+/* =============================================================================
+   CONTENT BOXES
+   ========================================================================== */
+   
+.premiumpress_box .content {padding:10px;}
+.grid400-left {width: 400px;padding-bottom: 10px;float: left;margin-right: 10px; margin-left:10px;} 	
+.grid300-left {width: 340px;padding-bottom: 10px;float: left;margin-right: 10px; margin-left:10px;} 
+.savebarb { border-top:1px solid #ddd; padding-top:10px; }
+
+/* =============================================================================
+   SHRINKTHEWEB SPECIFIC FORMATTING
+   ========================================================================== */
+   
+#stwwt_feature_comp {border-collapse: collapse;	margin: 0 auto 0;}
+#stwwt_feature_comp td,#stwwt_feature_comp th {border: 1px solid #d1d1d1;padding: 8px 8px;line-height: 1.1em;}
+#stwwt_feature_comp thead th {background: #2B86B1;color: #FFF;border-color: #236A8C;padding: 5px 8px;}
+
+/* =============================================================================
+   CONTENT BOXES
+   ========================================================================== */
+
+	
+			#ppt-tabs{float:left; position:relative; width:100%; margin:10px 0px 0px 0;}
+			#ppt-tabs:nth-child(2n+2){margin-right:0;}
+			#ppt-tabs:nth-child(2n+1){clear:both;}
+			#ppt-tabs #ppt-tabs_tab_container{float:left; position:relative; width:100%; z-index:100;}
+			#ppt-tabs #ppt-tabs_tab_container a{
+				
+				position: relative;
+				display: inline-block;
+				
+				cursor:pointer;
+				font-family: Arial;
+			}
+			#ppt-tabs #ppt-tabs_content_container{position:relative; height:350px; overflow:hidden; z-index:50; clear:both;} 
+			#ppt-tabs #ppt-tabs_content_container #ppt-tabs_content_inner{position:relative; height:100%;} 
+			#ppt-tabs #ppt-tabs_content_container #ppt-tabs_content_inner .ppt-tabs_content{position:absolute; width:100%;}
+			#ppt-tabs #ppt-tabs_content_container #ppt-tabs_content_inner .ppt-tabs_content span.row{float:left; clear:both;}
+			#ppt-tabs #ppt-tabs_content_container #ppt-tabs_content_inner h1{font-size:18px;}
+			#ppt-tabs #ppt-tabs_content_container #ppt-tabs_content_inner p{margin-bottom:0;}
+			
+			#ppt-tabs.oldlook #ppt-tabs_tab_container{margin-bottom: -1px;}
+			
+			#ppt-tabs.oldlook #ppt-tabs_tab_container a {
+				color: #6e6e6e;
+				padding: 8px 11px;
+				font: 14px Helvetica, Arial, sans-serif;
+				text-decoration: none;
+				text-shadow: 0 1px 0 #fff;
+				background: #f3f3f3;
+				background: -webkit-gradient(linear,0% 40%,0% 70%,from(#F5F5F5),to(#F1F1F1));
+				background: -moz-linear-gradient(linear,0% 40%,0% 70%,from(#F5F5F5),to(#F1F1F1));
+				border: solid 1px #dcdcdc;
+				border-radius: 2px;
+				-webkit-border-radius: 2px;
+				-moz-border-radius: 2px;
+				-webkit-transition: border-color .218s;
+				-moz-transition: border .218s;
+				-o-transition: border-color .218s;
+				transition: border-color .218s;
+				margin-right:5px;
+				
+			}
+			#ppt-tabs.oldlook #ppt-tabs_tab_container a:not(.active):hover {
+				color: #555;
+				border-color: #999;
+				border-bottom-color: gainsboro;
+				
+			}
+			#ppt-tabs.oldlook #ppt-tabs_tab_container a:not(.active):active {
+				color: #333;
+				-moz-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+				-webkit-box-shadow:0 2px 5px rgba(0, 0, 0, 0.2);
+				box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+			}
+			
+			
+			#ppt-tabs.oldlook #ppt-tabs_tab_container a:first-child{}
+			#ppt-tabs.oldlook #ppt-tabs_tab_container a.active{color: #666; border-bottom-color: white; background: white; margin-top: -1px; padding-top: 9px; font-weight:bold; text-shadow: white 0 1px 0; }
+			
+			
+			
+			#ppt-tabs.oldlook #ppt-tabs_content_container{padding:10px;  border: 1px solid #D4D4D4; background-color: white;}
+			
+			#ppt-tabs.newlook{
+				
+				background-color: #ffffff;
+		
+				font-size:12px;
+			}
+			
+			#ppt-tabs.grey{
+				background-color: #efefef;
+				padding:10px;
+				border-radius: 5px;
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				-ms-border-radius: 5px;
+				-o-border-radius: 5px;
+			}
+			
+ 
+#ppt-tabs.le-menu #ppt-tabs_content_container{
+	padding:15px;
+	color:#454545;
+}
+
+#ppt-tabs.le-menu ul#ppt-tabs_tab_container {
+	position: relative;
+	width: auto;
+	float: left;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	border: 1px solid #ffffff;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,0,0,0.0)), color-stop(100%, rgba(0,0,0,0.30)));
+	background: -webkit-linear-gradient(top,rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.30) 100%);
+	background: -moz-linear-gradient(top, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.30) 100%);
+	background: -o-linear-gradient(top, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.30) 100%);
+	background: -ms-linear-gradient(top,rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.30) 100%);
+	background: linear-gradient(top, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.30) 100%);
+	font-family: Tahoma, sans-serif;
+	font-weight: bold;
+	font-size: 11px;
+}
+
+#ppt-tabs.le-menu.full-width ul#ppt-tabs_tab_container{
+	width: 100%;
+}
+
+#ppt-tabs.le-menu ul#ppt-tabs_tab_container li a {
+	text-decoration: none;
+	color: #f1f1f1;
+}
+
+#ppt-tabs.le-menu ul#ppt-tabs_tab_container li a:focus {
+	outline: none;
+}
+
+#ppt-tabs.le-menu ul#ppt-tabs_tab_container li {
+	float: left;
+	-webkit-transition: background-color 0.2s ease-out;
+	-moz-transition: background-color 0.2s ease-out;
+	-o-transition: background-color 0.2s ease-out;
+	-ms-transition: background-color 0.2s ease-out;
+	transition: background-color 0.2s ease-out;
+}
+
+#ppt-tabs.le-menu ul#ppt-tabs_tab_container > li:hover, #ppt-tabs.le-menu ul#ppt-tabs_tab_container > li.active {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,0,0,0.13)), color-stop(100%, rgba(0,0,0,0.0)));
+	background: -webkit-linear-gradient(top,rgba(0,0,0,0.13) 0%, rgba(0,0,0,0.0) 100%);
+	background: -moz-linear-gradient(top, rgba(0,0,0,0.13) 0%, rgba(0,0,0,0.0) 100%);
+	background: -o-linear-gradient(top, rgba(0,0,0,0.13) 0%, rgba(0,0,0,0.0) 100%);
+	background: -ms-linear-gradient(top,rgba(0,0,0,0.13) 0%, rgba(0,0,0,0.0) 100%);
+	background: linear-gradient(top, rgba(0,0,0,0.13) 0%, rgba(0,0,0,0.0) 100%);
+	background-color: rgba(0,0,0,0.10);
+}
+
+#ppt-tabs.le-menu ul#ppt-tabs_tab_container > li:first-child {
+	margin-left: 15px;
+}
+
+#ppt-tabs.le-menu ul#ppt-tabs_tab_container > li:last-child {
+	margin-right: 15px;
+}
+
+#ppt-tabs.le-menu ul#ppt-tabs_tab_container li > a {
+	float: left;
+	line-height: 50px;
+	padding: 0 15px 0 15px;
+	text-transform: uppercase;
+	-moz-text-shadow: 1px 1px rgba(0,0,0,0.1);
+	-webkit-text-shadow: 1px 1px rgba(0,0,0,0.1);
+	-o-text-shadow: 1px 1px rgba(0,0,0,0.1);
+	text-shadow: 1px 1px rgba(0,0,0,0.1);
+}
+
+/* LeMenu - Dark style */
+#ppt-tabs.le-menu.dark ul#ppt-tabs_tab_container{
+	background-color: #45484d;
+}
+
+/* LeMenu - Blue style */
+#ppt-tabs.le-menu.blue ul#ppt-tabs_tab_container{
+	background-color: #11c1f7;
+}
+
+/* LeMenu - Green style */
+#ppt-tabs.le-menu.green ul#ppt-tabs_tab_container{
+	background-color: #27d187;
+}
+
+/* LeMenu - Purple style */
+#ppt-tabs.le-menu.purple ul#ppt-tabs_tab_container{
+	background-color: #9b3c9a;
+}
+
+/* LeMenu - Pink style */
+#ppt-tabs.le-menu.pink ul#ppt-tabs_tab_container{
+	background-color: #f051a4;
+}
